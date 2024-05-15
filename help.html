@@ -1,0 +1,1717 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Hai | Help</title>
+          <style>
+              /* https://github.com/sindresorhus/github-markdown-css */
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body,
+  [data-theme="dark"] {
+    /*dark*/
+    color-scheme: dark;
+    --color-prettylights-syntax-comment: #8b949e;
+    --color-prettylights-syntax-constant: #79c0ff;
+    --color-prettylights-syntax-entity: #d2a8ff;
+    --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+    --color-prettylights-syntax-entity-tag: #7ee787;
+    --color-prettylights-syntax-keyword: #ff7b72;
+    --color-prettylights-syntax-string: #a5d6ff;
+    --color-prettylights-syntax-variable: #ffa657;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+    --color-prettylights-syntax-carriage-return-bg: #b62324;
+    --color-prettylights-syntax-string-regexp: #7ee787;
+    --color-prettylights-syntax-markup-list: #f2cc60;
+    --color-prettylights-syntax-markup-heading: #1f6feb;
+    --color-prettylights-syntax-markup-italic: #c9d1d9;
+    --color-prettylights-syntax-markup-bold: #c9d1d9;
+    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+    --color-prettylights-syntax-markup-deleted-bg: #67060c;
+    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+    --color-prettylights-syntax-markup-inserted-bg: #033a16;
+    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+    --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+    --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+    --color-fg-default: #e6edf3;
+    --color-fg-muted: #848d97;
+    --color-fg-subtle: #6e7681;
+    --color-canvas-default: #0d1117;
+    --color-canvas-subtle: #161b22;
+    --color-border-default: #30363d;
+    --color-border-muted: #21262d;
+    --color-neutral-muted: rgba(110, 118, 129, 0.4);
+    --color-accent-fg: #2f81f7;
+    --color-accent-emphasis: #1f6feb;
+    --color-success-fg: #3fb950;
+    --color-success-emphasis: #238636;
+    --color-attention-fg: #d29922;
+    --color-attention-emphasis: #9e6a03;
+    --color-attention-subtle: rgba(187, 128, 9, 0.15);
+    --color-danger-fg: #f85149;
+    --color-danger-emphasis: #da3633;
+    --color-done-fg: #a371f7;
+    --color-done-emphasis: #8957e5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .markdown-body,
+  [data-theme="light"] {
+    /*light*/
+    color-scheme: light;
+    --color-prettylights-syntax-comment: #57606a;
+    --color-prettylights-syntax-constant: #0550ae;
+    --color-prettylights-syntax-entity: #6639ba;
+    --color-prettylights-syntax-storage-modifier-import: #24292f;
+    --color-prettylights-syntax-entity-tag: #116329;
+    --color-prettylights-syntax-keyword: #cf222e;
+    --color-prettylights-syntax-string: #0a3069;
+    --color-prettylights-syntax-variable: #953800;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+    --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+    --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+    --color-prettylights-syntax-carriage-return-bg: #cf222e;
+    --color-prettylights-syntax-string-regexp: #116329;
+    --color-prettylights-syntax-markup-list: #3b2300;
+    --color-prettylights-syntax-markup-heading: #0550ae;
+    --color-prettylights-syntax-markup-italic: #24292f;
+    --color-prettylights-syntax-markup-bold: #24292f;
+    --color-prettylights-syntax-markup-deleted-text: #82071e;
+    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+    --color-prettylights-syntax-markup-inserted-text: #116329;
+    --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+    --color-prettylights-syntax-markup-changed-text: #953800;
+    --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+    --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+    --color-prettylights-syntax-meta-diff-range: #8250df;
+    --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+    --color-fg-default: #1F2328;
+    --color-fg-muted: #656d76;
+    --color-fg-subtle: #6e7781;
+    --color-canvas-default: #ffffff;
+    --color-canvas-subtle: #f6f8fa;
+    --color-border-default: #d0d7de;
+    --color-border-muted: hsla(210, 18%, 87%, 1);
+    --color-neutral-muted: rgba(175, 184, 193, 0.2);
+    --color-accent-fg: #0969da;
+    --color-accent-emphasis: #0969da;
+    --color-success-fg: #1a7f37;
+    --color-success-emphasis: #1f883d;
+    --color-attention-fg: #9a6700;
+    --color-attention-emphasis: #9a6700;
+    --color-attention-subtle: #fff8c5;
+    --color-danger-fg: #d1242f;
+    --color-danger-emphasis: #cf222e;
+    --color-done-fg: #8250df;
+    --color-done-emphasis: #8250df;
+  }
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+.markdown-body details,
+.markdown-body figcaption,
+.markdown-body figure {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body [hidden] {
+  display: none !important;
+}
+
+.markdown-body a {
+  background-color: transparent;
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.markdown-body abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body dfn {
+  font-style: italic;
+}
+
+.markdown-body h1 {
+  margin: .67em 0;
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.markdown-body mark {
+  /*background-color: var(--color-attention-subtle);*/
+  /*color: var(--color-fg-default);*/
+  background-color: #fffb74;
+  color: #696969;
+}
+
+.markdown-body small {
+  font-size: 90%;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body sup {
+  top: -0.5em;
+}
+
+.markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: var(--color-canvas-default);
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.markdown-body figure {
+  margin: 1em 40px;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border-muted);
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border-default);
+  border: 0;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=button],
+.markdown-body [type=reset],
+.markdown-body [type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+.markdown-body [type=checkbox],
+.markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body [type=number]::-webkit-inner-spin-button,
+.markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.markdown-body [type=search]::-webkit-search-cancel-button,
+.markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  appearance: button;
+  font: inherit;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body ::placeholder {
+  color: var(--color-fg-subtle);
+  opacity: 1;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body details:not([open]) > *:not(summary) {
+  display: none !important;
+}
+
+.markdown-body a:focus,
+.markdown-body [role=button]:focus,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=checkbox]:focus {
+  outline: 2px solid var(--color-accent-fg);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.markdown-body a:focus:not(:focus-visible),
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body input[type=radio]:focus:not(:focus-visible),
+.markdown-body input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+
+.markdown-body a:focus-visible,
+.markdown-body [role=button]:focus-visible,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline: 2px solid var(--color-accent-fg);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.markdown-body a:not([class]):focus,
+.markdown-body a:not([class]):focus-visible,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline-offset: 0;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  line-height: 10px;
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  background-color: var(--color-canvas-subtle);
+  border: solid 1px var(--color-neutral-muted);
+  border-bottom-color: var(--color-neutral-muted);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--color-neutral-muted);
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.25;
+}
+
+.markdown-body h2 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.markdown-body h3 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .85em;
+  color: var(--color-fg-muted);
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: .25em solid var(--color-border-default);
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body tt,
+.markdown-body code,
+.markdown-body samp {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body .mr-2 {
+  margin-right: var(--base-size-8, 8px) !important;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body > *:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: var(--color-danger-fg);
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.markdown-body summary h1,
+.markdown-body summary h2,
+.markdown-body summary h3,
+.markdown-body summary h4,
+.markdown-body summary h5,
+.markdown-body summary h6 {
+  display: inline-block;
+}
+
+.markdown-body summary h1 .anchor,
+.markdown-body summary h2 .anchor,
+.markdown-body summary h3 .anchor,
+.markdown-body summary h4 .anchor,
+.markdown-body summary h5 .anchor,
+.markdown-body summary h6 .anchor {
+  margin-left: -40px;
+}
+
+.markdown-body summary h1,
+.markdown-body summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol[type="a s"] {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body ol[type="A s"] {
+  list-style-type: upper-alpha;
+}
+
+.markdown-body ol[type="i s"] {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol[type="I s"] {
+  list-style-type: upper-roman;
+}
+
+.markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.markdown-body div > ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li > p {
+  margin-top: 16px;
+}
+
+.markdown-body li + li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table th {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown-body table td > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table tr {
+  background-color: var(--color-canvas-default);
+  border-top: 1px solid var(--color-border-muted);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--color-canvas-subtle);
+}
+
+.markdown-body table img {
+  background-color: transparent;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--color-fg-default);
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code,
+.markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--color-neutral-muted);
+  border-radius: 6px;
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body samp {
+  font-size: 85%;
+}
+
+.markdown-body pre code {
+  font-size: 100%;
+}
+
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 8px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--color-fg-default);
+  /*background-color: var(--color-canvas-subtle);*/
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body .csv-data td,
+.markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--color-canvas-default);
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background: var(--color-canvas-subtle);
+  border-top: 0;
+}
+
+.markdown-body [data-footnote-ref]::before {
+  content: "[";
+}
+
+.markdown-body [data-footnote-ref]::after {
+  content: "]";
+}
+
+.markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.markdown-body .footnotes ol {
+  padding-left: 16px;
+}
+
+.markdown-body .footnotes ol ul {
+  display: inline-block;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.markdown-body .footnotes li {
+  position: relative;
+}
+
+.markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--color-accent-emphasis);
+  border-radius: 6px;
+}
+
+.markdown-body .footnotes li:target {
+  color: var(--color-fg-default);
+}
+
+.markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.markdown-body .pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+
+.markdown-body .pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.markdown-body .pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.markdown-body .pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+
+.markdown-body .pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+
+.markdown-body .pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+
+.markdown-body .pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+
+.markdown-body .pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+.markdown-body .pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.markdown-body .pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+
+.markdown-body .pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+
+.markdown-body .pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+
+.markdown-body .pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+
+.markdown-body g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: var(--base-text-weight-normal, 400);
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item label {
+  font-weight: var(--base-text-weight-normal, 400);
+}
+
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.markdown-body .task-list-item + .task-list-item {
+  margin-top: 4px;
+}
+
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.4em;
+  vertical-align: middle;
+}
+
+.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.markdown-body .contains-task-list {
+  position: relative;
+}
+
+.markdown-body .contains-task-list:hover .task-list-item-convert-container,
+.markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+  display: block;
+  width: auto;
+  height: 24px;
+  overflow: visible;
+  clip: auto;
+}
+
+.markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+
+.markdown-body .markdown-alert {
+  padding: var(--base-size-8) var(--base-size-16);
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid var(--color-border-default);
+}
+
+.markdown-body .markdown-alert > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body .markdown-alert > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body .markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: var(--base-text-weight-medium, 500);
+  align-items: center;
+  line-height: 1;
+}
+
+.markdown-body .markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-accent-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-accent-fg);
+}
+
+.markdown-body .markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-done-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-done-fg);
+}
+
+.markdown-body .markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-attention-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-attention-fg);
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-success-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-success-fg);
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-danger-emphasis);
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-danger-fg);
+}
+
+/* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
+
+/* reset block elements  */
+* {
+  box-sizing: border-box;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header styles –––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  margin: 0;
+  position: relative;
+  height: 52px;
+  background-color: #f0f0f0;
+}
+
+header h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1.3rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+
+
+              .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 16px;
+              }
+          </style>
+          <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+          <script type="module">
+            import hljs from 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/es/highlight.min.js';
+            hljs.configure({languages: ['JavaScript', 'js']});
+            hljs.highlightAll();
+          </script>
+      </head>
+      <body>
+        <header>
+            <h1>Hai</h1>
+        </header>
+        <main class="markdown-body">
+          <p>Table of contents</p>
+<!-- TOC -->
+<ul>
+<li><a href="#the-composer">The composer</a>
+<ul>
+<li><a href="#document-formatting-in-markdown">Document formatting in Markdown</a></li>
+<li><a href="#document-interactivity-with-a-twist">Document interactivity with a Twist</a></li>
+<li><a href="#document-auto-save-and-load">Document auto-save and load</a></li>
+<li><a href="#keyboard-shortcuts">Keyboard shortcuts</a></li>
+</ul>
+</li>
+<li><a href="#the-content-library">The content library</a>
+<ul>
+<li><a href="#snippet">Snippet</a></li>
+<li><a href="#macro">Macro</a></li>
+<li><a href="#content-examples">Content examples</a></li>
+<li><a href="#macro-document-context-and-directives">Macro document context and directives</a></li>
+<li><a href="#document-header-customisation">Document header customisation</a></li>
+</ul>
+</li>
+<li><a href="#the-context-manager">The context manager</a>
+<ul>
+<li><a href="#context-examples">Context examples</a></li>
+</ul>
+</li>
+</ul>
+<!-- TOC -->
+<p><a name="the-composer"></a></p>
+<h2>The composer</h2>
+<p>One of the main reasons of its existence is front and center: a large, blank workspace for writing and composing texts.</p>
+<p>In contrast to applications offering limited space, often confined to the size of an SMS box, this utility prioritizes
+ample room for writing informative, high-quality content.</p>
+<p><a name="document-formatting-in-markdown"></a></p>
+<h3>Document formatting in Markdown</h3>
+<p>While the purest of pure is simply plain text, you can also write in Markdown which is a lightweight markup language that allows you to format text using simple symbols. You can easily add headers, bold or italicize text, create lists, and insert links—all
+using <a href="https://www.markdownguide.org/basic-syntax/">Markdown's straightforward syntax</a>.</p>
+<p><a name="document-interactivity-with-a-twist"></a></p>
+<h3>Document interactivity with a Twist</h3>
+<p>In addition to writing Markdown syntax, you can also add a <code>Twist</code> (aka <code>Tweak</code>, <code>Marker</code>, <code>Curly</code>) which is a pair of double curly brackets <mark>{{}}</mark> that become
+automatically highlighted and interactive with keyboard and mouse. Think of it as an easy way to create a form inside your writing that you can interact with.</p>
+<p>Mark a position in the text that requires attention:</p>
+<blockquote>
+<p>Get: <mark>{{}}</mark></p>
+</blockquote>
+<p>Provide a hint by wrapping the text in comment syntax <code>/**/</code>:</p>
+<blockquote>
+<p>Get: <mark>{{/* shopping items */}}</mark></p>
+</blockquote>
+<p>Provide a default option when selected:</p>
+<blockquote>
+<p>Get: <mark>{{ water }}</mark></p>
+</blockquote>
+<p>Provide a list of options by separating them with the pipe <code>|</code> character:</p>
+<blockquote>
+<p>Get: <mark>{{ water | milk | beer | wine }}</mark></p>
+</blockquote>
+<p>Text inside a twist is automatically trimmed, meaning whitespace before and after is removed. This gives the text some space to breathe and make it more readable.</p>
+<p>Put a long list of options under each other:</p>
+<blockquote>
+<p>Get: <mark>{{<br>
+    water |<br>
+    milk |<br>
+    beer |<br>
+    wine |<br>
+    bread |<br>
+    spaghetti<br>
+}}</mark></p>
+</blockquote>
+<p>And maybe the option pipe separator on the left:</p>
+<blockquote>
+<p>Get: <mark>{{<br>
+        water<br>
+    |   milk<br>
+    |   beer<br>
+    |   wine<br>
+    |   bread<br>
+    |   spaghetti<br>
+}}</mark></p>
+</blockquote>
+<p>If you don't want the text to be trimmed, use an exclamation mark <code>!</code> right after the opening curly brackets:</p>
+<blockquote>
+<p>Try it out.<mark>{{! This will keep the space...<br>
+and the line break.}}</p>
+</blockquote>
+<p><a name="document-auto-save-and-load"></a></p>
+<h3>Document auto-save and load</h3>
+<p>Documents are automatically saved, preventing any loss of work. When you reopen the application, it loads
+the most recent document you were working on, so you can pick up right where you left off without any hassle.</p>
+<p><strong>Important: documents that haven't been modified in 14 days will automatically be deleted.</strong></p>
+<p><a name="keyboard-shortcuts"></a></p>
+<h3>Keyboard shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bold</td>
+<td>Ctrl + B</td>
+</tr>
+<tr>
+<td>Italics</td>
+<td>Ctrl + I</td>
+</tr>
+<tr>
+<td>Create link</td>
+<td>Ctrl + K</td>
+</tr>
+<tr>
+<td>Insert twist</td>
+<td>Ctrl + { or }</td>
+</tr>
+<tr>
+<td>Insert comment</td>
+<td>Ctrl + /</td>
+</tr>
+<tr>
+<td>Enable/Disable links</td>
+<td>Ctrl + L</td>
+</tr>
+<tr>
+<td>Markup/Markdown</td>
+<td>Ctrl + M</td>
+</tr>
+<tr>
+<td>Display shortcuts</td>
+<td>Ctrl + ?</td>
+</tr>
+</tbody>
+</table>
+<p><a name="the-content-library"></a></p>
+<h2>The content library</h2>
+<p>Aside the large textarea is a place to create, organise and select snippets of content that you find important
+and useful. A snippet can be a piece text you want to reuse, a knowledge document you want to consult, or a script you
+come up to automate certain parts of your writing.</p>
+<p>The content library allows you to manage two types of content:</p>
+<ul>
+<li>Snippet (aka static snippet)</li>
+<li>Macro (aka scripted snippet)</li>
+</ul>
+<p>Newly created snippets and macros automatically land in the inbox. You can create folders to organise your content with drag-and-drop and collapse/expand them for easier navigation once the library becomes large.</p>
+<p><a name="snippet"></a></p>
+<h3>Snippet</h3>
+<p>A snippet is a piece of text which allows you to quickly insert frequently used phrases, templates, or boilerplate text,
+reduce repetitive typing and save time.</p>
+<p>A snippet is defined by:</p>
+<ul>
+<li><strong>title</strong>: a short description, used to explain the concept of the snippet</li>
+<li><strong>trigger</strong>: a unique, case-insensitive word used to identify the snippet and &quot;trigger&quot; it while typing or referencing
+it in other snippets</li>
+<li><strong>note</strong>: optional content in plain or markdown-formatted text to provide extra information about the snippet</li>
+<li><strong>text</strong>: the actual snippet, written in plain or markdown-formatted text with twists and can be injected into
+your writing by selecting it from the library. A snippet has access to
+other snippets and macros, allowing you to compose an entire document automatically from different individual snippets
+of text.</li>
+</ul>
+<p>A snippet can have multiple texts, published or drafted, and reordered with drag-and-drop.</p>
+<p><a name="macro"></a></p>
+<h3>Macro</h3>
+<p>A macro is a piece of text written in JavaScript to create instructions which use and transform data. It <em>cannot</em>
+reference and use other snippets or macros, but it is context-aware and has extra capabilities giving it some
+powers to automate your work and environment.</p>
+<p>A macro - just like a static snippet - is defined by:</p>
+<ul>
+<li><strong>title</strong>: a short description, used to explain the concept of the macro</li>
+<li><strong>trigger</strong>: a unique, case-insensitive word, used to identify the macro and &quot;trigger&quot; it while typing or referencing
+it in other snippets</li>
+<li><strong>note</strong>: optional content in plain or markdown-formatted text to provide extra information about the macro</li>
+<li><strong>script</strong>: the actual instructions written in JavaScript which are automatically wrapped in a function. The
+returned value can be used in other snippets or injected
+directly into your document.</li>
+</ul>
+<p>A macro can have multiple scripts, published or drafted, and reordered with drag-and-drop.</p>
+<p><a name="content-examples"></a></p>
+<h3>Content examples</h3>
+<p>Imagine a commonly written text:</p>
+<pre><code class="language-text">Hi {{/* human */}},
+
+Thank you for getting in touch.
+
+Kind regards,
+Another human
+</code></pre>
+<p>Break it down into multiple, reusable snippets:</p>
+<ul>
+<li><strong>$hai</strong><pre><code class="language-text">Hi {{/* human */}},
+</code></pre>
+</li>
+<li><strong>$ty</strong><pre><code class="language-text">Thank you for getting in touch.
+</code></pre>
+</li>
+<li><strong>$sign</strong><pre><code class="language-text">Kind regards,
+Another human
+</code></pre>
+</li>
+</ul>
+<p>Now you can individually &quot;trigger&quot; those snippets by:</p>
+<ul>
+<li>selecting them in the content library, or</li>
+<li>writing their trigger words (without the <code>$</code> prefix) and hit <kbd>Tab</kbd> to expand the snippet<br>
+hai <kbd>Tab</kbd><br>
+ty <kbd>Tab</kbd><br>
+sign <kbd>Tab</kbd></li>
+</ul>
+<p>With just 3 clicks, or 3 word x <kbd>Tab</kbd> hits, you can compose an entire text as fast as you can click or write.</p>
+<p>In case this is a common block of text and you prefer a single click experience, combine the individual snippets into a
+canned response... even with a <code>{{twist}}</code>:</p>
+<ul>
+<li><strong>$cr</strong><pre><code class="language-text">$hai
+
+$ty
+
+{{/* write here */}}
+
+$sign
+</code></pre>
+</li>
+</ul>
+<p>While this is a contrived and minimal example, the ability to compose a document or template by combining various
+snippets of text with just a reference becomes very powerful. And keep in mind that snippets can also use macros...</p>
+<ul>
+<li><strong>$DayOfTheWeek</strong> Get today's weekday<pre><code class="language-js">// Get today's date as a string in the format 'weekday'
+return new Date().toLocaleDateString('en', {weekday: 'long'});
+</code></pre>
+... and use it in the <strong>$ty</strong> snippet<pre><code class="language-text">Thank you for getting in touch on this lovely $DayOfTheWeek.
+</code></pre>
+</li>
+<li><strong>$DomainOfContact</strong> Get the domain name from the mail sender<pre><code class="language-js">// Get the email address from the mail sender
+const emailAddress = $mail.sender.email;
+// And return the part after the @
+return `${emailAddress}`.split(&quot;@&quot;)[1];
+</code></pre>
+... and use it in a snippet<pre><code class="language-text">I checked out $DomainOfContact and found it... interesting.
+</code></pre>
+</li>
+<li><strong>$Watman</strong> obligatory example to show off <a href="https://www.destroyallsoftware.com/talks/wat">JavaScript´s powers</a><pre><code class="language-js">return Array(16).join(&quot;wat&quot; - 1) + &quot; Batman!&quot;;
+</code></pre>
+</li>
+</ul>
+<p><a name="macro-document-context-and-directives"></a></p>
+<h3>Macro document context and directives</h3>
+<p>Inside a macro, you also:</p>
+<ul>
+<li>have access to the <code>$hai</code> document context, i.e. the document you are writing, and</li>
+<li>can modify the same <code>$hai</code> document context by using directives
+(i.e. JavaScript comments in a predefined format)</li>
+</ul>
+<p>This means you can use text you wrote, run it through your own program, and rewrite the text programmatically.</p>
+<p>There are two types of directives available. The first one directs <strong>when</strong> the macro is run, i.e. <code>on:load</code> or <code>on:trigger</code>.</p>
+<ul>
+<li>
+<p>Direct the macro to run when the content and/or context is loaded:</p>
+<pre><code class="language-js">// hai on:load
+return &quot;I'm here&quot;;
+</code></pre>
+<p>The script will be executed automatically and make the returned value available to be used in snippets. This is the
+default behaviour of a macro which means defining <code>on:load</code> is not really necessary.</p>
+</li>
+<li>
+<p>Direct the macro to run when triggered:</p>
+<pre><code class="language-js">// hai on:trigger
+return &quot;I'm here because you triggered me&quot;;
+</code></pre>
+<p>The script will be executed when you invoke it, which is especially helpful when working with dates and times that need to be
+correct up-to-the-minute or second. It also allows you to run a script that works with the text you are writing.<br>
+<strong>Note:</strong> macros that run on:trigger cannot be used in snippets</p>
+</li>
+</ul>
+<p>The second one directs <strong>what</strong> the returned value will be used for, i.e. <code>set:&lt;document section&gt;</code>.</p>
+<ul>
+<li>
+<p>Direct the macro to use the returned value as the document content on load:</p>
+<pre><code class="language-js">// hai set:docContent
+return &quot;Now I'm the content&quot;;
+</code></pre>
+</li>
+</ul>
+<p><strong>Warning</strong>: directives are a powerful way to automate and prepare your compositions with combinations of when and what
+to write. You can in fact automatically compose a document <code>on:load</code>, but be careful to not overwrite whatever you have
+written before.</p>
+<ul>
+<li>
+<p><strong>$LoudContent</strong> to transform the writing in all CAPS:</p>
+<pre><code class="language-js">// hai on:trigger
+// hai set:docContent
+// First get the content
+const content = $hai.docContent;
+// Then transform it
+const loudContent = content.toUpperCase();
+// Now return the transformed content and overwrite
+// the current content as directed by set:docContent 
+return loudContent;
+</code></pre>
+</li>
+<li>
+<p>When finished writing, trigger <strong>$BuildFootnotes</strong> turn markdown-style inline links into footnotes</p>
+<pre><code class="language-js">// hai on:trigger
+// hai set:docContent
+// Get the written text
+let text = $hai.docContent;
+// Regular expression to match markdown-style links
+const mdLinkRE = /\[([^\]]+)\]\(([^)]+)\)/gm;
+// Array to store footnotes
+let footnotes = [];
+// Index for footnotes (start at 1)
+let idx = 1;
+// Find all matches of markdown-style links
+const matches = [...text.matchAll(mdLinkRE)];
+// Iterate over each match
+matches.forEach(([match, title, link]) =&gt; {
+  // Add footnote to the footnotes array
+  footnotes.push(`[${idx}] ${link}`);
+  // Replace the markdown-style link with the title and footnote index
+  text = text.replace(match, `${title} [${idx}]`);
+  // Increment the footnote index
+  idx++;
+});
+// If no footnotes were generated, return the original text
+if (!footnotes.length) return text;
+// Determine whitespace based on whether there are newlines at the end of the text
+const whitespace = /\n\s*\n\s*$/.test(text) ? '' : '\r\n\r\n';
+// Concatenate the original text, whitespace (if needed), and footnotes, and return
+return text + whitespace + footnotes.join('\r\n');
+</code></pre>
+</li>
+</ul>
+<p><a name="document-header-customisation"></a></p>
+<h3>Document header customisation</h3>
+<p>There are two more <code>set</code> directives available:</p>
+<ul>
+<li><code>// hai set:docHeaders1</code></li>
+<li><code>// hai set:docHeaders2</code></li>
+</ul>
+<p>A macro can use these directives to programmatically set the document headers.<br>
+Both the main header (<code>docHeaders1</code>) and sub header (<code>docHeaders2</code>) get two lines after which the text will be
+truncated. This means there is room for up to 4 lines of header text that can be optionally styled with HTML
+tags: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>strong</code>, <code>em</code>, and <code>hr</code>.</p>
+<ul>
+<li>Set the main header when loading a document<pre><code class="language-js">// hai set:docHeaders1
+return `&lt;h1&gt;My notes&lt;/h1&gt;`;
+</code></pre>
+</li>
+<li>Set the sub header with today's date when loading a document<pre><code class="language-js">// hai set:docHeaders2
+// Get the current date as a string representing the date only
+const today = new Date(Date.now()).toDateString();
+// Return the current date with some emphasis
+return `&lt;em&gt;${today}&lt;/em&gt;\n&lt;hr&gt;`;
+</code></pre>
+</li>
+<li>When finished writing, add some info to see how long it will take for someone to read it<pre><code class="language-js">// hai on:trigger
+// hai set:docHeaders2
+// Get the written text
+let text = $hai.docContent;
+// Trim the text and split it into words
+const words = text.trim().split(/\s+/).length;
+// Average reading speed in words per minute (wpm)
+const averageReadingSpeed = 183;
+// Calculate the estimated reading time in minutes (rounded up)
+const estimatedMinutes = Math.ceil(words / averageReadingSpeed);
+// Generate the message indicating the estimated reading time
+const readingTimeMessage = `(About a ${estimatedMinutes} minute read)`;
+// Return the reading time message
+return readingTimeMessage;
+</code></pre>
+</li>
+</ul>
+<p><a name="the-context-manager"></a></p>
+<h2>The context manager</h2>
+<p>Context (from Latin contextus, con- 'together' + texere 'to weave') is the source of information you use when you are
+composing notes, email replies, knowledge documents, etc. It is the webpage you visit or have open all the time in your
+browser to get something done.</p>
+<p>If you need to reply to a lot of emails, Gmail or Outlook is the context of your writing. If you interact with
+customers, Zendesk or Jira might be the resources you use all the time. If you do research, maybe Wikipedia is your
+source of information. If you are a developer, GitHub issues or discussions might be the context you write and respond
+to a lot.</p>
+<p>Context is not required to run the application, but when you do, it becomes much more useful because your snippets and
+macros - and therefore your writing - becomes instantly context-aware.</p>
+<p><a name="context-examples"></a></p>
+<h3>Context examples</h3>
+<p>Imagine you provided a <code>mail</code> context with the following structure:</p>
+<pre><code class="language-text">mail 
+├── subject
+├── from 
+│   ├── name 
+│   └── email 
+└── received
+</code></pre>
+<p>Back in your webmail application, if you want to reply to an email, click the browser extension icon and Hai will source
+the context according to your instructions and make it available in a tree of information:</p>
+<pre><code class="language-text">mail 
+├── subject: Ideas for improvement 
+├── from 
+│   ├── name: Jane Doe 
+│   └── email: jane.doe@acme.com 
+└── received: 2 hours ago
+</code></pre>
+<p>Just as in the snippet library, you can click the individual items to insert them in the text, or reference it inside
+your snippets and macros with the <code>$</code> symbol, followed by its name and the &quot;path&quot; to the information you want to inject.</p>
+<ul>
+<li><strong>$hai</strong> snippet with the contact name automatically injected<pre><code class="language-text">Hi $mail.from.name,
+</code></pre>
+</li>
+<li><strong>$SenderFirstName</strong>, because the full name is a bit formal<pre><code class="language-js">const fullName = $mail.from.name;
+// Split the full name by spaces and take the first part
+return fullName.split(&quot; &quot;)[0];
+</code></pre>
+... now we can salute the sender in <strong>$hai</strong> by their first name:<pre><code class="language-text">Hi $SenderFirstName,
+</code></pre>
+Or maybe give the option of which part to pick with a twist<pre><code class="language-js">const fullName = $mail.from.name;
+// Split the full name into parts and join them with a pipe
+const nameParts = fullName.split(&quot; &quot;).join(&quot; | &quot;);
+// and return it wrapped in a twist as a selector
+return `{{ ${nameParts} }}`;
+</code></pre>
+</li>
+<li><strong>$wrt</strong> A snippet of text using the subject<pre><code class="language-text">With regards to the topic &quot;$mail.subject&quot;.
+</code></pre>
+</li>
+<li><strong>$MailSubject</strong> header so we know what the subject is about<pre><code class="language-js">// hai set:docHeaders1
+return $mail.subject;
+</code></pre>
+</li>
+<li><strong>$MailInfo</strong> header with some extra details<pre><code class="language-js">// hai set:docHeaders2
+// example: Jane Doe (2 hours ago)
+const mailFrom = $mail.from.name;
+const mailReceived = $mail.received;
+return `${mailFrom} (${mailReceived})`;
+</code></pre>
+</li>
+<li><strong>$AutoSpamReply</strong> to not waste too much time<pre><code class="language-js">// hai set:docContent
+// Get the subject of the email
+const subject = $mail.subject;
+
+if (subject.includes(&quot;win major prizes&quot;)) {
+  return `Hi,
+
+Thank you for reaching out.
+
+At the moment I have no interest in winning major prizes.
+However, please do stay in touch in case I won.
+
+Kind regards,
+Lucky Luke`;
+}
+</code></pre>
+</li>
+</ul>
+
+        </main>
+      </body>
+      </html>
+    
