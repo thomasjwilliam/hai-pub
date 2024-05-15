@@ -24,3 +24,44 @@ if (weeks > 0) {
 } else {
   return ""just now"";
 }","","USER","MACRO","PUBLISHED","Shared snippets"
+"setHeaders","Headers","// hai set:docHeaders1
+
+const number = $post.number;
+if (number === '0') return """";
+const title = $post.title;
+return `<h2>${title}</h2>`;","","USER","MACRO","PUBLISHED","Header configuration"
+"setHeaders","Headers","// hai set:docHeaders2
+
+const number = $post.number;
+if (number === '0') return """";
+
+const postState = $post.state;
+const postAuthor = $post.author;
+const postTime = getPostDatetimeRelativeFromNow();
+
+return `#${number} Opened ${postTime} by @${postAuthor}\n<hr>`;
+
+function getPostDatetimeRelativeFromNow () {
+  const isoDatetime = $post.openedUTC;
+  const date = new Date(isoDatetime);
+  const now = new Date();
+
+  const elapsed = now - date;
+  const seconds = Math.floor(elapsed / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  const weeks = Math.floor(days / 7);
+
+  if (weeks > 0) {
+    return weeks === 1 ? ""1 week ago"" : `${weeks} weeks ago`;
+  } else if (days > 0) {
+    return days === 1 ? ""1 day ago"" : `${days} days ago`;
+  } else if (hours > 0) {
+    return hours === 1 ? ""1 hour ago"" : `${hours} hours ago`;
+  } else if (minutes > 0) {
+    return minutes === 1 ? ""1 minute ago"" : `${minutes} minutes ago`;
+  } else {
+    return ""just now"";
+  }
+}","","USER","MACRO","PUBLISHED","Header configuration"
