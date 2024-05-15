@@ -1,0 +1,54 @@
+{
+  "about": {
+    "name": "Github",
+    "description": "Let's build from here",
+    "url": "https://github.com"
+  },
+  "id": "f4510736-e587-4521-bcda-7ef13019813e",
+  "name": "gh",
+  "sample": {
+    "number": "0",
+    "title": "Something wrong with the date",
+    "author": "aida-bugg",
+    "state": "OPEN",
+    "opened": "Jan 1, 1960",
+    "openedUTC": "1960-01-02T00:00:00Z",
+    "lastPostAuthor": "",
+    "lastPostDate": ""
+  },
+  "schema": [
+    {
+      "id": "656b4233-fef5-4ff2-bedc-dea0de75d3d3",
+      "name": "number"
+    },
+    {
+      "id": "df0e5fb6-e915-44a2-813a-bda32e5a2e69",
+      "name": "title"
+    },
+    {
+      "id": "7ac425d0-5ff5-461b-97df-fe3d83dbdc06",
+      "name": "author"
+    },
+    {
+      "id": "dd9c72b2-c6a8-48f8-bc9e-950f4af7eb69",
+      "name": "state"
+    },
+    {
+      "id": "de04e791-7abd-4dd5-9a38-7c4d03e100ce",
+      "name": "opened"
+    },
+    {
+      "id": "abd33fad-89ff-4bb6-8799-13662f16f9bd",
+      "name": "openedUTC"
+    },
+    {
+      "id": "2fef470d-4f20-498d-9b11-7689c573abed",
+      "name": "lastPostAuthor"
+    },
+    {
+      "id": "a193c76e-1c41-4192-91b4-1f9876add128",
+      "name": "lastPostDate"
+    }
+  ],
+  "script": "const t=document.querySelectorAll(\"a.author\"),e=document.querySelectorAll(\"#discussion_bucket relative-time\"),n=document.querySelector(\"h1.gh-header-title :nth-child(1)\").textContent.trim().replace(\"#\",\"\");return{number:document.querySelector(\"h1.gh-header-title :nth-child(2)\").textContent.trim().replace(\"#\",\"\"),title:n,state:document.querySelector(\".State\").textContent.trim().split(\"\\n\")[0],opened:e[0].textContent.trim(),openedUTC:e[0].getAttribute(\"datetime\"),author:t[0].textContent.trim(),lastPostAuthor:t[t.length-1].textContent.trim(),lastPostDate:e[e.length-1].getAttribute(\"datetime\")}"
+}

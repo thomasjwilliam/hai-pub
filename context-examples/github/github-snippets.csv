@@ -1,0 +1,26 @@
+"trigger","title","text","note","scope","type","status","folder"
+"hai","Greetings","Hi @$gh.author,","","USER","SNIPPET","PUBLISHED","Shared snippets"
+"DiscussionLink","DiscussionLink","https://example.com/discussions/{{/*number*/}}","","USER","SNIPPET","PUBLISHED","Shared snippets"
+"RelativeDateTimePosted","RelativeDateTimePosted","const isoDatetime = $gh.openedUTC;
+
+const date = new Date(isoDatetime);
+const now = new Date();
+
+const elapsed = now - date;
+const seconds = Math.floor(elapsed / 1000);
+const minutes = Math.floor(seconds / 60);
+const hours = Math.floor(minutes / 60);
+const days = Math.floor(hours / 24);
+const weeks = Math.floor(days / 7);
+
+if (weeks > 0) {
+  return weeks === 1 ? ""1 week ago"" : `${weeks} weeks ago`;
+} else if (days > 0) {
+  return days === 1 ? ""1 day ago"" : `${days} days ago`;
+} else if (hours > 0) {
+  return hours === 1 ? ""1 hour ago"" : `${hours} hours ago`;
+} else if (minutes > 0) {
+  return minutes === 1 ? ""1 minute ago"" : `${minutes} minutes ago`;
+} else {
+  return ""just now"";
+}","","USER","MACRO","PUBLISHED","Shared snippets"
