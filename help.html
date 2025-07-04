@@ -1266,7 +1266,7 @@ header h1 {
 <li><a href="#the-composer">The composer</a>
 <ul>
 <li><a href="#document-formatting-in-markdown">Document formatting in Markdown</a></li>
-<li><a href="#document-interactivity-with-a-twist">Document interactivity with a Twist</a></li>
+<li><a href="#document-interactivity-with-a-mark">Document interactivity with a Mark</a></li>
 <li><a href="#document-auto-save-and-load">Document auto-save and load</a></li>
 <li><a href="#keyboard-shortcuts">Keyboard shortcuts</a></li>
 </ul>
@@ -1296,9 +1296,9 @@ ample room for writing informative, high-quality content.</p>
 <h3>Document formatting in Markdown</h3>
 <p>While the purest of pure is simply plain text, you can also write in Markdown which is a lightweight markup language that allows you to format text using simple symbols. You can easily add headers, bold or italicize text, create lists, and insert links—all
 using <a href="https://www.markdownguide.org/basic-syntax/">Markdown's straightforward syntax</a>.</p>
-<p><a name="document-interactivity-with-a-twist"></a></p>
-<h3>Document interactivity with a Twist</h3>
-<p>In addition to writing Markdown syntax, you can also add a <code>Twist</code> (aka <code>Tweak</code>, <code>Marker</code>, <code>Curly</code>) which is a pair of double curly brackets <mark>{{}}</mark> that become
+<p><a name="document-interactivity-with-a-mark"></a></p>
+<h3>Document interactivity with a Mark</h3>
+<p>In addition to writing Markdown syntax, you can also add a <code>Mark</code> (aka <code>Tweak</code>, <code>Twist</code>, <code>Curly</code>) which is a pair of double curly brackets <mark>{{}}</mark> that become
 automatically highlighted and interactive with keyboard and mouse. Think of it as an easy way to create a form inside your writing that you can interact with.</p>
 <p>Mark a position in the text that requires attention:</p>
 <blockquote>
@@ -1316,7 +1316,7 @@ automatically highlighted and interactive with keyboard and mouse. Think of it a
 <blockquote>
 <p>Get: <mark>{{ water | milk | beer | wine }}</mark></p>
 </blockquote>
-<p>Text inside a twist is automatically trimmed, meaning whitespace before and after is removed. This gives the text some space to breathe and make it more readable.</p>
+<p>Text inside a Mark is automatically trimmed, meaning whitespace before and after is removed. This gives the text some space to breathe and make it more readable.</p>
 <p>Put a long list of options under each other:</p>
 <blockquote>
 <p>Get: <mark>{{<br>
@@ -1372,7 +1372,7 @@ the most recent document you were working on, so you can pick up right where you
 <td>Ctrl + K</td>
 </tr>
 <tr>
-<td>Insert twist</td>
+<td>Insert mark</td>
 <td>Ctrl + { or }</td>
 </tr>
 <tr>
@@ -1414,7 +1414,7 @@ reduce repetitive typing and save time.</p>
 <li><strong>trigger</strong>: a unique, case-insensitive word used to identify the snippet and &quot;trigger&quot; it while typing or referencing
 it in other snippets</li>
 <li><strong>note</strong>: optional content in plain or markdown-formatted text to provide extra information about the snippet</li>
-<li><strong>text</strong>: the actual snippet, written in plain or markdown-formatted text with twists and can be injected into
+<li><strong>text</strong>: the actual snippet, written in plain or markdown-formatted text with Mark and can be injected into
 your writing by selecting it from the library. A snippet has access to
 other snippets and macros, allowing you to compose an entire document automatically from different individual snippets
 of text.</li>
@@ -1469,7 +1469,7 @@ sign <kbd>Tab</kbd></li>
 </ul>
 <p>With just 3 clicks, or 3 word x <kbd>Tab</kbd> hits, you can compose an entire text as fast as you can click or write.</p>
 <p>In case this is a common block of text and you prefer a single click experience, combine the individual snippets into a
-canned response... even with a <code>{{twist}}</code>:</p>
+canned response... even with a <code>{{Mark}}</code>:</p>
 <ul>
 <li><strong>$cr</strong><pre><code class="language-text">$hai
 
@@ -1671,10 +1671,10 @@ return fullName.split(&quot; &quot;)[0];
 </code></pre>
 ... now we can salute the sender in <strong>$hai</strong> by their first name:<pre><code class="language-text">Hi $SenderFirstName,
 </code></pre>
-Or maybe give the option of which part to pick with a twist<pre><code class="language-js">const fullName = $mail.from.name;
+Or maybe give the option of which part to pick with a Mark<pre><code class="language-js">const fullName = $mail.from.name;
 // Split the full name into parts and join them with a pipe
 const nameParts = fullName.split(&quot; &quot;).join(&quot; | &quot;);
-// and return it wrapped in a twist as a selector
+// and return it wrapped in a textmark as a selector
 return `{{ ${nameParts} }}`;
 </code></pre>
 </li>
